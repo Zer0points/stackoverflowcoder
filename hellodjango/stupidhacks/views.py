@@ -14,5 +14,5 @@ def stupidhacks(request):
 def submit(request):
     info = request.POST['info']
     print(info)
-    generateStupidCode(info)
+    print(generateStupidCode([info]))
     return render(request, 'stupidhacks/stupidhacks.html', {})
