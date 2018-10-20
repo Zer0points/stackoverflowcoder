@@ -21,5 +21,3 @@ def test_general_questions():
     questions = ["how to invert an image stack overflow"]
     stupidCode = generateStupidCode(questions)
     print(stupidCode[0])
-
-test_general_questions()
