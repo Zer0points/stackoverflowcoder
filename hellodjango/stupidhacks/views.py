@@ -24,9 +24,7 @@ def submit(request):
     else:
         info = request.GET['info']
         print(info)
-        answer = generateStupidCode([info])[0]
+        answer = generateStupidCode([info])
         gList.append(answer)
-        print(gList)
         args = {'answers': generateStupidCode([info])}
-        print(args)
         return render(request, 'stupidhacks/stupidhacks.html', args)
