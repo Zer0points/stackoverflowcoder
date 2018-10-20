@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>AU Coder</title>
+  <link rel="icon" href="/static/img/small_logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,9 +16,9 @@
 <body>
 
 
-    <div class="jumbotron text-center">
-    <h1>3RD DEGREE BURNT SIENNA</h1>
-    <p>ARTIFICIAL UNINTELLIGENCE</p> 
+    <div class="jumbotron">
+        <img src="/static/img/big_logo.svg" width="30%">
+    </div>
     </div>
     <div class="container">
         <div class="row">
@@ -32,8 +33,7 @@
             </form>
             
             <div class="col-sm-6">
-                <textarea class="boxsizingBorder" rows="20" cols="50">{% for answer in answers %}{{ answer }}{% endfor %}
-                </textarea>
+                <textarea readonly class="boxsizingBorder" rows="15" cols="50">{% for answer in answers %}{{ answer }}{% endfor %}</textarea>
             </div>
         </div>
     </div>
