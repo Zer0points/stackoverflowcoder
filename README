@@ -1,5 +1,10 @@
 Packages that need to be installed:
 
+pip to install packages
+
+For django:
+pip3 install Django
+
 For searchGoogle:
 pip3 install google
 Make sure you install certificates on the Mac install of Python3.7. Double click on Install Certificates.command in the Python3.7 folder (in your Applications folder)
@@ -9,3 +14,9 @@ pip3 install requests
 
 For bs4:
 pip3 install beautifulsoup4
+
+To run:
+cd to stackoverflowcoder\hellodjango
+py manage.py runserver
+visit the page indicated in your terminal 
+"Starting development server at http://127.0.0.1:8000/"
