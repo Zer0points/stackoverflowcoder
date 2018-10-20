@@ -1,0 +1,6 @@
+Packages that need to be installed:
+
+For searchGoogle:
+pip3 install google
+Make sure you install certificates on the Mac install of Python3.7. Double click on Install Certificates.command in the Python3.7 folder (in your Applications folder)
+
