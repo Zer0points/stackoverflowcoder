@@ -4,10 +4,10 @@ from getCode import getCode
 
 def generateStupidCode (questionsList):
     perfectCode = []
-    for elem in questionsList:
+    for question in questionsList:
         try:
-            ID = searchGoogle(elem)
-            answerText = getAnswer(ID)
+            id = searchGoogle(question)
+            answerText = getAnswer(id)
             code = getCode(answerText)
             perfectCode.append(code)
         except ValueError:
