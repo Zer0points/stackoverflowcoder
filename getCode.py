@@ -8,9 +8,8 @@ def getCode (answerString):
 
     for code in xmlFile.iter('code'):
         allCode = allCode + code.text
-
-     if not allCode:
-         raise ValueError("No code.")
+    if not allCode:
+        raise ValueError("No code.")
 
     return allCode
 
