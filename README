@@ -5,5 +5,4 @@ pip3 install google
 Make sure you install certificates on the Mac install of Python3.7. Double click on Install Certificates.command in the Python3.7 folder (in your Applications folder)
 
 For getAnswer:
-brew install pipenv
-pipenv install requests
+pip3 install requests
