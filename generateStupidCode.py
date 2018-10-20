@@ -1,4 +1,16 @@
-def generateStupidCode (questionsString):
-    #This is the driver function. IT will call al the other functions a bunch. 
-    bigString = ""
-    return bigString
+from searchGoogle import searchGoogle
+from getAnswer import getAnswer
+from getCode import getCode
+
+def generateStupidCode (questionsList):
+    perfectCode = []
+    for question in questionsList:
+        try:
+            id = searchGoogle(question)
+            answerText = getAnswer(id)
+            code = getCode(answerText)
+            perfectCode.append(code)
+        except ValueError:
+            perfectCode.append("You're fucked.")
+
+    return perfectCode

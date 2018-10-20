@@ -5,6 +5,11 @@ def getCode (answerString):
     answerString = "<wrapper>" + answerString + "</wrapper>" #string needs to be wrapped for ElementTree library
     allCode = ""
     xmlFile = ET.fromstring(answerString)
+
     for code in xmlFile.iter('code'):
         allCode = allCode + code.text
+    if not allCode:
+        raise ValueError("No code.")
+
     return allCode
+
