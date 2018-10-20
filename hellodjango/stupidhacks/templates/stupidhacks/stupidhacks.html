@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        
+
+
+            <form action="submit" method="post">{% csrf_token %}
+                    <input type="text" name="info"><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+    </body>
+</html>

@@ -10,5 +10,5 @@ def searchGoogle (aQuestion):
 		break
 
 	if questionID == -1:
-		raise "Could not find any questions"
+		raise ValueError("Could not find any questions")
 	return questionID
