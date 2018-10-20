@@ -1,13 +1,12 @@
-import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup as bs
 
 def getCode (answerString):
     #this scrapes the answer string for the code snippet
-    answerString = "<wrapper>" + answerString + "</wrapper>" #string needs to be wrapped for ElementTree library
     allCode = ""
-    xmlFile = ET.fromstring(answerString)
+    xmlFile = bs(answerString, 'html.parser')
 
-    for code in xmlFile.iter('code'):
-        allCode = allCode + code.text
+    for code in xmlFile.find_all('code'):
+        allCode = allCode + code.string
     if not allCode:
         raise ValueError("No code.")
 
