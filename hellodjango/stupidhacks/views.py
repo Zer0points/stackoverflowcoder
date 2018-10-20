@@ -6,6 +6,8 @@ sys.path.insert(1, os.path.realpath(os.path.pardir))
 
 from generateStupidCode import generateStupidCode
 
+global gList
+gList = []
 
 # Create your views here.
 def stupidhacks(request):
@@ -14,13 +16,17 @@ def stupidhacks(request):
 def submit(request):
 
     if request.method == 'POST':
-        info = request.POST['info']
-        print(info)
-        args = {'info': generateStupidCode([info])}
-        return render(request, 'stupidhacks/stupidhacks.html', args)
+        return
+        # info = request.POST['info']
+        # print(info)
+        # args = {'info': generateStupidCode([info])}
+        # return render(request, 'stupidhacks/stupidhacks.html', args)
     else:
         info = request.GET['info']
         print(info)
-        args = {'info': generateStupidCode([info])[0]}
+        answer = generateStupidCode([info])[0]
+        gList.append(answer)
+        print(gList)
+        args = {'answers': generateStupidCode([info])}
         print(args)
         return render(request, 'stupidhacks/stupidhacks.html', args)

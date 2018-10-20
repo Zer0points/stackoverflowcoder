@@ -21,14 +21,19 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <form action="submit" method="">
+            <form action="submit" method="">
+                <div class="col-sm-4">
                     <input type="text" name="info"><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="col-sm-8">
-                <textarea rows="20" cols="100">{{ info }}</textarea>
+                </div>
+                <div class="col-sm-2">
+                    <input type="submit" value="Add Question">
+                    <!-- <input class="btn btn-primary" type="submit" value="Add Question">/> -->
+                </div>
+            </form>
+            
+            <div class="col-sm-6">
+                <textarea class="boxsizingBorder" rows="20" cols="50">{% for answer in answers %}{{ answer }}{% endfor %}
+                </textarea>
             </div>
         </div>
     </div>
