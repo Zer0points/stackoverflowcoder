@@ -25,3 +25,10 @@ input, button {
 textarea {
     width: 100%;
 }
+
+.alert {
+    /* padding: 20px; */
+    background-color: #65ed75; /* Green */
+    color: white;
+    margin-bottom: 15px;
+}
