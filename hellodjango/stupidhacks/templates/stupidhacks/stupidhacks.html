@@ -24,7 +24,10 @@
         <div class="row">
             <div class="col-sm-6">
                 <form action="submit" method="">
-                    <div class="row">
+                        <textarea name="info" id="textarea" class="boxsizingBorder" rows="15" cols="50"></textarea>
+                        <input type="submit" value="Generate Code!!"><br>
+
+                    <!-- <div class="row">
                     
                         <div class="col-sm-12">
                             <input type="text" name="info"><br>
@@ -41,8 +44,8 @@
                     <div class="col-sm-6">
                         <button id="send" typevalue="Generate Code!!">Generate Code!!</button>
                     </div>
-                </div>
-            </form>
+                </div> -->
+                </form>
 
             </div>
             
@@ -52,12 +55,12 @@
         </div>
     </div>
     <script>
-        $(document).ready(function(){
-            $(document).on('click','#addQuestion', function(){
-                var emptySpace = document.getElementById('emptySpace');
-                emptySpace.innerHTML = emptySpace.innerHTML + '<div class="col-sm-12"><input type="text" name="info"><br></div>';
-            })
-        })
+        // $(document).ready(function(){
+        //     $(document).on('click','#addQuestion', function(){
+        //         var emptySpace = document.getElementById('emptySpace');
+        //         emptySpace.innerHTML = emptySpace.innerHTML + '<div class="col-sm-12"><input type="text" name="info"><br></div>';
+        //     })
+        // })
     </script>
 </body>
 </html>
