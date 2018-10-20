@@ -6,3 +6,6 @@ Make sure you install certificates on the Mac install of Python3.7. Double click
 
 For getAnswer:
 pip3 install requests
+
+For bs4:
+pip3 install beautifulsoup4
