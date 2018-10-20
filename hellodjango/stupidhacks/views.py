@@ -16,10 +16,11 @@ def submit(request):
     if request.method == 'POST':
         info = request.POST['info']
         print(info)
-        args = {'info': generateStupidCode(info)}
+        args = {'info': generateStupidCode([info])}
         return render(request, 'stupidhacks/stupidhacks.html', args)
     else:
         info = request.GET['info']
         print(info)
-        args = {'info': generateStupidCode(info)}
+        args = {'info': generateStupidCode([info])[0]}
+        print(args)
         return render(request, 'stupidhacks/stupidhacks.html', args)
