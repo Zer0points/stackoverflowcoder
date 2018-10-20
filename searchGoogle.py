@@ -7,6 +7,10 @@ def searchGoogle (aQuestion):
 		if BASE_URL not in url:
 			continue
 		questionID = url.lstrip(BASE_URL).split("/")[0]
+		if not questionID.isdigit():
+			continue
+		print(url)
+		print(questionID)
 		break
 
 	if questionID == -1:
